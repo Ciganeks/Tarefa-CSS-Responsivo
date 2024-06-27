@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: yellow;
+}
+
+.lista-lanches li img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+
+#carousel-imagens img{
+    max-height: 480px;
+}
+
+body {
+    background-color: #000;
+}
+
+header, footer {
+    background-color: #000;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: yellow;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-lanches li {
+    list-style: none;
+    max-width: 90%;
+    margin-bottom: 24px;
+}
+
+.lista-lanches img {
+    max-width: 100%;
+}
+
+.lista-lanches li h3 {
+    margin: 16px 0;
+}
+
+.lista-lanches {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: yellowgreen;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        color: yellow;
+    }
+
+    #carousel-imagens img{
+        max-height: 320px;
+        object-fit: cover;
+    }
+
+    #sobre-a-loja img{
+        max-width: 320px;
+        margin-right: 0;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .lista-lanches li {
+        list-style: none;
+        max-width: 90%;
+        margin-bottom: 24px;
+        margin-left: 16px;
+    }
+    
+    .lista-lanches img {
+        max-width: 100%;
+        margin-left: 32px;
+    }
+    
+    .lista-lanches li h3 {
+        margin: 16px 0;
+    }
+    
+    .lista-lanches {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .lista-lanches {
+        display: grid;
+        grid-template-columns: repeat(4, 23.25%);
+    }
+}
